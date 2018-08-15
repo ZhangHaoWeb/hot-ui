@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "zhanghaov <48798724@qq.com>",
-  "private": true,
+  "main": "packages/index.js",
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit",
+    "lint": "eslint --ext .js,.vue examples test/unit",
     "build": "node build/build.js"
   },
   "dependencies": {
+    "markdown-it-container": "^2.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -62,6 +64,7 @@
     "url-loader": "^0.5.8",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
+    "vue-markdown-loader": "^2.4.1",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
