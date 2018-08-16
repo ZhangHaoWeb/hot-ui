@@ -1,9 +1,13 @@
 {
   "name": "hot-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a UI components for vue.",
   "author": "zhanghaov <48798724@qq.com>",
   "main": "packages/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZhangHaoWeb/hot-ui"
+  },
   "private": false,
   "scripts": {
     "dev": "npm run build:theme && webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
