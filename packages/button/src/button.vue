@@ -1,20 +1,19 @@
 <!-- button -->
 <template>
-   <div class="page">
-
-   </div>
+   <button class="hot-default-button"><slot></slot></button>
 </template>
 
 <script type="text/ecmascript-6">
 export default {
-   data () {
-       return {
+  name: 'hotButton',
+  data () {
+    return {
 
-       };
-   },
-   components: {
+    };
+  },
+  methods: {
 
-   }
+  }
 };
 </script>
 
