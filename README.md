@@ -13,10 +13,10 @@ npm install hot-ui -D
 
 ## Quick Start
 ```bash
-	import Vue form 'vue'
-	import hotUI from 'hot-ui'
-	
-	Vue.use(hotUI)
+import Vue form 'vue'
+import hotUI from 'hot-ui'
+
+Vue.use(hotUI)
 ```
 
 ## Browser Support
