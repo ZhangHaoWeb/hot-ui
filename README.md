@@ -5,7 +5,7 @@
 <center>![](static/images/hot.jpeg)</center> 
 
 
-##install
+###install
 
 ``` bash
 	npm install hot-ui -D
