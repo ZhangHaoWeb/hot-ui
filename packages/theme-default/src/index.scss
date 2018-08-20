@@ -1,7 +1,10 @@
+@import './border.scss';
 @import './variable.scss';
+@import './layout.scss';
 @import './input.scss';
 @import './button.scss';
 
+
 body {
-    background: $theme-mian-color;
+    color: red;
 }

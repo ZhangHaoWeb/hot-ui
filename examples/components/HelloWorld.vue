@@ -5,6 +5,7 @@
     <p>this is hot ui.</p>
     <hot-input v-model="value"></hot-input>
     <hot-button>点击</hot-button>
+    <div class="col-md-6 col-sm-6 haha">哈哈</div>
   </div>
 </template>
 
@@ -35,5 +36,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.haha {
+  background: #fff;
 }
 </style>
