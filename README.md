@@ -1,27 +1,31 @@
 # hot-ui
 
-> A Vue.js project
+> A Vue.js components.
 
-## Build Setup
+<center>![](static/images/hot.jpeg)</center> 
+
+
+##install
 
 ``` bash
-# install dependencies
-npm install
+	npm install hot-ui -D
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
 
+##Quick Start
+```bash
+	import Vue form 'vue'
+	import hotUI from 'hot-ui'
+	
+	Vue.use(hotUI)
+
+```
+
+##Browser Support
+Modern browsers and Internet <font color="orange">Explorer 10+</font>.
+
+##LICENSE
+<font color="orange">MIT</font>
+
+##Links
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
