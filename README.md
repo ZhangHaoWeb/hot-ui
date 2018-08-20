@@ -7,7 +7,7 @@
 </p>
 
 
-## install
+## Install
 ``` shell
 npm install hot-ui -D
 ```
