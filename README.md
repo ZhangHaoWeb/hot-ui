@@ -7,12 +7,12 @@
 
 ## install
 
-``` bash
+``` shell
 npm install hot-ui -D
 ```
 
 ## Quick Start
-```bash
+```javascript
 import Vue form 'vue'
 import hotUI from 'hot-ui'
 
@@ -23,7 +23,7 @@ Vue.use(hotUI)
 Modern browsers and Internet <font color="orange">Explorer 10+</font>.
 
 ## LICENSE
-<font color="orange">MIT</font>
+[MIT](LICENSE)
 
 ## Links
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
