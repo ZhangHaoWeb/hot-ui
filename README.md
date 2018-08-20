@@ -8,7 +8,6 @@
 
 
 ## install
-
 ``` shell
 npm install hot-ui -D
 ```
