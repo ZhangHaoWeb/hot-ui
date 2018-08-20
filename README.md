@@ -2,7 +2,9 @@
 
 > A Vue.js components.
 
-<center>![](static/images/hot.jpeg)</center> 
+<p align="center">
+  <img src="./static/images/hot.jpeg">
+</p>
 
 
 ## install
