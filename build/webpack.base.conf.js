@@ -49,7 +49,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('examples'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+        include: [resolve('examples'), resolve('test'), resolve('pages'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -77,6 +77,9 @@ module.exports = {
       },{
         test: /\.md$/,
         loader: 'vue-markdown-loader'
+      },{
+        test: /\.sass$/,
+        loader: ['style', 'css', 'sass']
       }
     ]
   },

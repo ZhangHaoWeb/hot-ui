@@ -14,7 +14,7 @@ module.exports = {
   cssSourceMap: sourceMapEnabled,
   cacheBusting: config.dev.cacheBusting,
   transformToRequire: {
-    video: ['examples', 'poster'],
+    video: ['examples', 'poster','pages'],
     source: 'examples',
     img: 'examples',
     image: 'xlink:href'

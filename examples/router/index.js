@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+// import Home from '../pages/Home'
 
 // 按需加载
-const test = r => require.ensure([], () => r(require('../docs/test.md')))
+const Home = r => require.ensure([], () => r(require('../pages/Home')))
 
 Vue.use(Router)
 
@@ -15,9 +16,9 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/test',
-      name: 'test',
-      component: test
+      path: '/home',
+      name: 'Home',
+      component: Home
     }
   ]
 })
