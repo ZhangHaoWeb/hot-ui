@@ -3,6 +3,9 @@
   "version": "1.0.3",
   "description": "This is a UI components for vue.",
   "author": "zhanghaov <48798724@qq.com>",
+  "keywords": [
+    "Vue", "webpack", "components", "sass"
+  ],
   "main": "packages/index.js",
   "repository": {
     "type": "git",
