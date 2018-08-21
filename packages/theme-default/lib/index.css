@@ -348,3 +348,7 @@ table {
 .hot-default-button:focus {
   outline: orange solid 1px;
 }
+
+body {
+  font-family: PingFangSC-Regular, 'Microsoft YaHei', 'Courier New', Courier, monospace;
+}

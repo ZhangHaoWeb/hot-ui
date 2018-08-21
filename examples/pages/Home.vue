@@ -1,21 +1,16 @@
 <!-- 首页 -->
 <template>
    <div class="container">
-     <!-- head -->
-     <page-header>Hot</page-header>
+     home
    </div>
 </template>
 
 <script type="text/ecmascript-6">
-import pageHeader from '../components/Head'
 export default {
   data () {
     return {
 
     }
-  },
-  components: {
-    pageHeader
   },
   methods: {
 
@@ -26,5 +21,11 @@ export default {
 <style lang="scss" scoped>
   .container {
     width: 100%;
+
+    .warpper {
+      width: 1200px;
+      background: orange;
+      margin: 10px auto;
+    }
   }
 </style>
