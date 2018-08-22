@@ -6,10 +6,12 @@ import router from './router'
 import store from './store/index'
 import hotUI from '../packages/index'
 import '../packages/theme-default/lib/index.css'
+import highLight from './directives/highlight'
 
 Vue.config.productionTip = false
 
 Vue.use(hotUI)
+Vue.use(highLight)
 
 /* eslint-disable no-new */
 new Vue({

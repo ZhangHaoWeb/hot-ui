@@ -7,6 +7,8 @@ import Router from 'vue-router'
 
 // 按需加载
 const Home = r => require.ensure([], () => r(require('../pages/Home')))
+const Install = r => require.ensure([], () => r(require('../pages/guide/Install')))
+const QuickStart = r => require.ensure([], () => r(require('../pages/guide/QuickStart')))
 
 Vue.use(Router)
 
@@ -20,6 +22,7 @@ export default new Router({
     {
       path: '/install',
       name: 'Install',
+      component: Install,
       data: {
         title: '安装',
         sort: 1,
@@ -29,6 +32,7 @@ export default new Router({
     {
       path: '/start',
       name: 'Start',
+      component: QuickStart,
       data: {
         title: '快速上手',
         sort: 1,

@@ -6,7 +6,20 @@
 @import './button.scss';
 
 body {
-  color: #333;
+  color: rgb(100, 100, 100);
   font-family: PingFangSC-Regular, 'Microsoft YaHei', 'Courier New', Courier, monospace
 }
 
+.hot-h1 {
+  font-size: 24px;
+  padding-left: 10px;
+  border-left: 5px solid $theme-main-color;
+}
+.hot-h2 {
+  font-size: 20px;
+  border-left: 2px solid $theme-main-color;
+}
+.hot-h3 {
+  font-size: 16px;
+  border-left: 2px solid $theme-main-color;
+}

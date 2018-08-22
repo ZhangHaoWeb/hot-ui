@@ -36,7 +36,6 @@ export default {
         }
       }
       this.navData = nav
-      console.log(nav)
     },
     /**
      * nav item selected event
@@ -73,7 +72,7 @@ export default {
   }
   .nav-link {
     text-decoration: none;
-    color: #333;
+    color: rgb(100, 100, 100);
     font-size: 12px;
     cursor: default;
     &:hover {

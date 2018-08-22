@@ -350,6 +350,22 @@ table {
 }
 
 body {
-  color: #333;
+  color: #646464;
   font-family: PingFangSC-Regular, 'Microsoft YaHei', 'Courier New', Courier, monospace;
+}
+
+.hot-h1 {
+  font-size: 24px;
+  padding-left: 10px;
+  border-left: 5px solid #FFB200;
+}
+
+.hot-h2 {
+  font-size: 20px;
+  border-left: 2px solid #FFB200;
+}
+
+.hot-h3 {
+  font-size: 16px;
+  border-left: 2px solid #FFB200;
 }
