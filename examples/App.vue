@@ -1,13 +1,14 @@
 <template>
   <div id="app" class="container">
+    <!-- header -->
     <page-header>Hot</page-header>
     <div class="warpper">
-       <div class="nav">
-         <page-nav></page-nav>
-       </div>
-       <div class="router">
-         <router-view/>
-       </div>
+        <!-- nav -->
+        <page-nav></page-nav>
+        <!-- main view -->
+        <div class="router">
+          <router-view/>
+        </div>
      </div>
   </div>
 </template>
@@ -32,13 +33,7 @@ export default {
     .warpper {
       position: relative;
       width: 1200px;
-      margin: 20px auto;
-      .nav {
-        position: fixed;
-        top: 100px;
-        bottom: 5px;
-        width: 240px;
-      }
+      margin: 35px auto;
       .router {
         padding-left: 270px;
       }

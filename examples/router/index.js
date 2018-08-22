@@ -16,12 +16,42 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
-    }, {
+    },
+    {
       path: '/install',
-      name: 'Install'
-    }, {
+      name: 'Install',
+      data: {
+        title: '安装',
+        sort: 1,
+        group: '开发指南'
+      }
+    },
+    {
       path: '/start',
-      name: 'Start'
+      name: 'Start',
+      data: {
+        title: '快速上手',
+        sort: 1,
+        group: '开发指南'
+      }
+    },
+    {
+      path: '/input',
+      name: 'Input',
+      data: {
+        title: 'layout',
+        sort: 2,
+        group: '布局'
+      }
+    },
+    {
+      path: '/button',
+      name: 'Button',
+      data: {
+        title: 'Input 输入框',
+        sort: 3,
+        group: '组件'
+      }
     },
     {
       path: '*',

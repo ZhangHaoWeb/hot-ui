@@ -1,12 +1,13 @@
 <!-- page nav -->
 <template>
    <div class="nav">
-     <div class="nav-cell">
-      <div class="nav-title">开发指南</div>
-      <ul>
-        <li><a href="" class="nav-link">安装</a></li>
-        <li><a href="" class="nav-link">快速上手</a></li>
-      </ul>
+     <div class="nav-cell" v-for="(list, key) in navData" v-bind:key="key">
+       <div class="nav-title">{{key}}</div>
+       <ul>
+          <li v-for="(item, index) in list" v-bind:key="index">
+            <router-link :to="item.path" class="nav-link">{{item.title}}</router-link>
+          </li>
+       </ul>
      </div>
    </div>
 </template>
@@ -15,12 +16,34 @@
 export default {
   data () {
     return {
-
+      navData: {}
     }
   },
   methods: {
+    /**
+     * init nav form $router
+     */
     initNav (data) {
-      console.log(data)
+      let nav = {}
+      for (var i in data) {
+        if (data[i].data) {
+          if (!nav[data[i].data.group]) {
+            nav[data[i].data.group] = []
+          }
+          data[i].data.path = data[i].path
+          data[i].data.active = false
+          nav[data[i].data.group].push(data[i].data)
+        }
+      }
+      this.navData = nav
+      console.log(nav)
+    },
+    /**
+     * nav item selected event
+     */
+    navSelectHandler (item) {
+      item.active = true
+      console.log(item.active + 'aa')
     }
   },
   mounted () {
@@ -31,18 +54,31 @@ export default {
 
 <style lang="scss" scoped>
   .nav {
-    line-height: 40px;
+    position: fixed;
+    top: 115px;
+    bottom: 5px;
+    width: 240px;
+  }
+  .nav-cell {
+    padding-bottom: 10px;
+    li {
+      padding-bottom: 15px;
+    }
   }
   .nav-title {
     font-size: 18px;
     color: #FFB200;
+    cursor: default;;
+    padding-bottom: 15px;
   }
   .nav-link {
     text-decoration: none;
     color: #333;
     font-size: 12px;
+    cursor: default;
     &:hover {
-      color: #FFB200;
+      color: rgb(155, 152, 152);
     }
   }
+
 </style>

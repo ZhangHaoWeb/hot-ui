@@ -1,7 +1,11 @@
 <!-- 首页 -->
 <template>
    <div class="container">
-     home
+      <div class="logo">
+        <img :src="logo" alt="logo">
+      </div>
+      <div class="title">Hot-UI</div>
+      <p class="des">This is a UI components for Vue.</p>
    </div>
 </template>
 
@@ -9,7 +13,7 @@
 export default {
   data () {
     return {
-
+      logo: require('../assets/images/hot.jpeg')
     }
   },
   methods: {
@@ -20,12 +24,19 @@ export default {
 
 <style lang="scss" scoped>
   .container {
+    text-align: center;
     width: 100%;
-
-    .warpper {
-      width: 1200px;
-      background: orange;
-      margin: 10px auto;
+    .logo {
+      text-align: center;
+      margin-left: -20px;
+    }
+    .title {
+      font-size: 28px;
+    }
+    .des {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgb(172, 168, 168);
     }
   }
 </style>
