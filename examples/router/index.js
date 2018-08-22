@@ -17,7 +17,12 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      data: {
+        title: '首页',
+        sort: 1,
+        group: '开发指南'
+      }
     },
     {
       path: '/install',
