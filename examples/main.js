@@ -7,6 +7,7 @@ import store from './store/index'
 import hotUI from '../packages/index'
 import '../packages/theme-default/lib/index.css'
 import highLight from './directives/highlight'
+import './assets/css/index.scss'
 
 Vue.config.productionTip = false
 

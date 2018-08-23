@@ -1,8 +1,8 @@
 <!-- head -->
 <template>
    <div class="page-header">
-     <img :src="logo" alt="logo" class="logo">
-     <div class="logo-name">
+     <img :src="logo" alt="logo" class="logo" @click="logoHandler">
+     <div class="logo-name"  @click="logoHandler">
        <slot></slot>
      </div>
    </div>
@@ -16,7 +16,9 @@ export default {
     }
   },
   methods: {
-
+    logoHandler () {
+      this.$router.push('/')
+    }
   }
 }
 </script>
@@ -35,10 +37,12 @@ export default {
       width: 60px;
       display: block;
       float: left;
+      cursor: pointer;
     }
     .logo-name {
       float: left;
       line-height: 60px;
+      cursor: pointer;
     }
     p {
       font-size: 12px;

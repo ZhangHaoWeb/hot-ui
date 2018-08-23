@@ -16,85 +16,130 @@ $col-4: 100% / 3;
 $col-6: 100% / 2;
 $col-8: $col-4 *2;
 
+@mixin col-common {
+  float: left;
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+    height: 0;
+  }
+}
 @media (max-width: $screen-xs-max) {
   .col-xs-1 {
-    width: $col-1
+    width: $col-1;
+    @include col-common;
   }
   .col-xs-2 {
-    width: $col-2
+    width: $col-2;
+    @include col-common;
   }
   .col-xs-3 {
-    width: $col-3
+    width: $col-3;
+    @include col-common;
   }
   .col-xs-4 {
-    width: $col-4
+    width: $col-4;
+    @include col-common;
   }
   .col-xs-6 {
-    width: $col-6
+    width: $col-6;
+    @include col-common;
   }
   .col-xs-8 {
-    width: $col-8
+    width: $col-8;
+    @include col-common;
+  }
+  .col-xs-12 {
+    width: 100%;
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .col-sm-1 {
-    width: $col-1
+    width: $col-1;
+    @include col-common;
   }
   .col-sm-2 {
-    width: $col-2
+    width: $col-2;
+    @include col-common;
   }
   .col-sm-3 {
-    width: $col-3
+    width: $col-3;
+    @include col-common;
   }
   .col-sm-4 {
-    width: $col-4
+    width: $col-4;
+    @include col-common;
   }
   .col-sm-6 {
-    width: $col-6
+    width: $col-6;
+    @include col-common;
   }
   .col-sm-8 {
-    width: $col-8
+    width: $col-8;
+    @include col-common;
+  }
+  .col-sm-12 {
+    width: 100%;
   }
 }
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
   .col-md-1 {
-    width: $col-1
+    width: $col-1;
+    @include col-common;
   }
   .col-md-2 {
-    width: $col-2
+    width: $col-2;
+    @include col-common;
   }
   .col-md-3 {
-    width: $col-3
+    width: $col-3;
+    @include col-common;
   }
   .col-md-4 {
-    width: $col-4
+    width: $col-4;
+    @include col-common;
   }
   .col-md-6 {
-    width: $col-6
+    width: $col-6;
+    @include col-common;
   }
   .col-md-8 {
-    width: $col-8
+    width: $col-8;
+    @include col-common;
+  }
+  .col-md-12 {
+    width: 100%;
   }
 }
 @media (min-width: $screen-lg-min) {
   .col-lg-1 {
-    width: $col-1
+    width: $col-1;
+    @include col-common;
   }
   .col-lg-2 {
-    width: $col-2
+    width: $col-2;
+    @include col-common;
   }
   .col-lg-3 {
-    width: $col-3
+    width: $col-3;
+    @include col-common;
   }
   .col-lg-4 {
-    width: $col-4
+    width: $col-4;
+    @include col-common;
   }
   .col-lg-6 {
-    width: $col-6
+    width: $col-6;
+    @include col-common;
   }
   .col-lg-8 {
-    width: $col-8
+    width: $col-8;
+    @include col-common;
+  }
+  .col-lg-12 {
+    width: 100%;
   }
 }

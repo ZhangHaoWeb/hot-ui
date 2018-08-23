@@ -5,7 +5,6 @@
         <img :src="logo" alt="logo">
       </div>
       <div class="title">Hot-UI</div>
-      <p class="des">This is a UI components for Vue.</p>
    </div>
 </template>
 

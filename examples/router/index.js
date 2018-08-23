@@ -9,6 +9,7 @@ import Router from 'vue-router'
 const Home = r => require.ensure([], () => r(require('../pages/Home')))
 const Install = r => require.ensure([], () => r(require('../pages/guide/Install')))
 const QuickStart = r => require.ensure([], () => r(require('../pages/guide/QuickStart')))
+const Layout = r => require.ensure([], () => r(require('../pages/layout/Layout')))
 
 Vue.use(Router)
 
@@ -17,12 +18,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home,
-      data: {
-        title: '首页',
-        sort: 1,
-        group: '开发指南'
-      }
+      component: Home
     },
     {
       path: '/install',
@@ -45,12 +41,22 @@ export default new Router({
       }
     },
     {
-      path: '/input',
-      name: 'Input',
+      path: '/layout',
+      name: 'Layout',
+      component: Layout,
       data: {
-        title: 'layout',
+        title: 'layout 布局',
         sort: 2,
-        group: '布局'
+        group: '基础'
+      }
+    },
+    {
+      path: '/container',
+      name: 'Container',
+      data: {
+        title: 'container 容器',
+        sort: 2,
+        group: '基础'
       }
     },
     {
