@@ -95,7 +95,8 @@
   },
   "files": [
     "dist",
-    "packages"
+    "packages/lib",
+    "packages/src"
   ],
   "browserslist": [
     "> 1%",
