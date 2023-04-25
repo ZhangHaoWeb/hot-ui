@@ -93,6 +93,9 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
+  "files": [
+    "dist"
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions",
