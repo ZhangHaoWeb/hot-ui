@@ -1,6 +1,6 @@
 {
   "name": "hot-ui",
-  "version": "1.0.13",
+  "version": "1.0.20",
   "description": "This is a UI components for vue.",
   "author": "zhanghaov <48798724@qq.com>",
   "keywords": [
@@ -95,7 +95,8 @@
   },
   "files": [
     "dist",
-    "packages"
+    "packages",
+    "!packages/theme-default/node_modules"
   ],
   "browserslist": [
     "> 1%",
