@@ -1,6 +1,6 @@
 {
   "name": "hot-ui",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This is a UI components for vue.",
   "author": "zhanghaov <48798724@qq.com>",
   "keywords": [
@@ -23,7 +23,7 @@
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue examples test/unit",
     "build": "node build/build.js && npm run build:theme",
-    "build:component": "webpack --config build/webpack.component.conf.js"
+    "build:pack": "webpack --config build/webpack.component.conf.js && npm run build:theme"
   },
   "dependencies": {
     "cp-cli": "^2.0.0",
@@ -104,8 +104,7 @@
   },
   "files": [
     "lib",
-    "packages",
-    "!packages/theme-default/node_modules"
+    "packages"
   ],
   "browserslist": [
     "ie > 9",

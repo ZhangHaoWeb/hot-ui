@@ -16,6 +16,7 @@ npm install hot-ui -D
 ```javascript
 import Vue form 'vue'
 import hotUI from 'hot-ui'
+import 'hot-ui/lib/theme-default/index.css'
 
 Vue.use(hotUI)
 ```
