@@ -95,8 +95,8 @@
   },
   "files": [
     "dist",
-    "packages/lib",
-    "packages/src"
+    "packages/node_modules",
+    "packages/gulpfile.js"
   ],
   "browserslist": [
     "> 1%",
