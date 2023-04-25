@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 /test/unit/coverage/
 /packages/theme-default/node_modules/
+/lib/
 
 # Editor directories and files
 .idea
